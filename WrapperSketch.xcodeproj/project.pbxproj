@@ -14,12 +14,10 @@
 		72A6CA9CEAFA1527B18D37B6 /* ofxDownloadCentral.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E292FED4978C6C9E54FF4165 /* ofxDownloadCentral.cpp */; };
 		75A2D700AC2F5D27B0ED2F59 /* ofxSimpleHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4AF34767E69AE73F353FEA9 /* ofxSimpleHttp.cpp */; };
 		8D60C222CBD3F869382832E9 /* ofxSyphonServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 32D6F27DC6308427F9A278C1 /* ofxSyphonServer.mm */; };
+		B72E62D41CB40195007FB1D6 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B72E62B01CB40195007FB1D6 /* Makefile */; };
+		B72E62D61CB40195007FB1D6 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B72E62D21CB40195007FB1D6 /* ofApp.cpp */; };
 		B7BE050A1CAC81C60081DDA4 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BE05091CAC81C60081DDA4 /* Syphon.framework */; };
 		B7BE050B1CAC81C60081DDA4 /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7BE05091CAC81C60081DDA4 /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B7BE05571CACC0F80081DDA4 /* mySketch_debug.exp in Sources */ = {isa = PBXBuildFile; fileRef = B7BE05281CACC0F80081DDA4 /* mySketch_debug.exp */; };
-		B7BE05581CACC0F80081DDA4 /* mySketch_debug.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BE052A1CACC0F80081DDA4 /* mySketch_debug.lib */; };
-		B7BE05591CACC0F80081DDA4 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B7BE05311CACC0F80081DDA4 /* Makefile */; };
-		B7BE055B1CACC0F80081DDA4 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7BE05551CACC0F80081DDA4 /* ofApp.cpp */; };
 		C9109422648B170B07A778CF /* SyphonNameboundClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E3405C5AE387BDDC2AD19473 /* SyphonNameboundClient.m */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
@@ -27,9 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B7BE055D1CACC0F80081DDA4 /* PBXContainerItemProxy */ = {
+		B72E62D81CB40195007FB1D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B7BE05371CACC0F80081DDA4 /* mySketch.xcodeproj */;
+			containerPortal = B72E62B51CB40195007FB1D6 /* mySketch.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
 			remoteInfo = mySketch;
@@ -75,65 +73,45 @@
 		71FFD50EA75BCC76F0C58D12 /* SyphonNameboundClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SyphonNameboundClient.h; path = ../../../addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.h; sourceTree = SOURCE_ROOT; };
 		90FEF196E321582981C8A556 /* ofxBatchDownloader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxBatchDownloader.h; path = ../../../addons/ofxSimpleHttp/src/ofxBatchDownloader.h; sourceTree = SOURCE_ROOT; };
 		A54758BB243FE1097208B8A4 /* wrapperApp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = wrapperApp.h; path = src/wrapperApp.h; sourceTree = SOURCE_ROOT; };
+		B72E629E1CB40195007FB1D6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B72E62A21CB40195007FB1D6 /* .suo */ = {isa = PBXFileReference; lastKnownFileType = file; path = .suo; sourceTree = "<group>"; };
+		B72E62A31CB40195007FB1D6 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B72E62A71CB40195007FB1D6 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B72E62A91CB40195007FB1D6 /* imga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imga.png; sourceTree = "<group>"; };
+		B72E62AA1CB40195007FB1D6 /* imgb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgb.png; sourceTree = "<group>"; };
+		B72E62AB1CB40195007FB1D6 /* imgc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgc.png; sourceTree = "<group>"; };
+		B72E62AC1CB40195007FB1D6 /* imgd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imgd.jpg; sourceTree = "<group>"; };
+		B72E62AD1CB40195007FB1D6 /* imge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imge.png; sourceTree = "<group>"; };
+		B72E62AE1CB40195007FB1D6 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B72E62AF1CB40195007FB1D6 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B72E62B01CB40195007FB1D6 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B72E62B11CB40195007FB1D6 /* mySketch.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mySketch.sln; sourceTree = "<group>"; };
+		B72E62B21CB40195007FB1D6 /* mySketch.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mySketch.vcxproj; sourceTree = "<group>"; };
+		B72E62B31CB40195007FB1D6 /* mySketch.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mySketch.vcxproj.filters; sourceTree = "<group>"; };
+		B72E62B41CB40195007FB1D6 /* mySketch.vcxproj.user */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mySketch.vcxproj.user; sourceTree = "<group>"; };
+		B72E62B51CB40195007FB1D6 /* mySketch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = mySketch.xcodeproj; sourceTree = "<group>"; };
+		B72E62BB1CB40195007FB1D6 /* icon.res */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.res; sourceTree = "<group>"; };
+		B72E62BC1CB40195007FB1D6 /* main.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.obj; sourceTree = "<group>"; };
+		B72E62BD1CB40195007FB1D6 /* mySketch.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mySketch.log; sourceTree = "<group>"; };
+		B72E62BF1CB40195007FB1D6 /* CL.command.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CL.command.1.tlog; sourceTree = "<group>"; };
+		B72E62C01CB40195007FB1D6 /* CL.read.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CL.read.1.tlog; sourceTree = "<group>"; };
+		B72E62C11CB40195007FB1D6 /* CL.write.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CL.write.1.tlog; sourceTree = "<group>"; };
+		B72E62C21CB40195007FB1D6 /* link.command.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.command.1.tlog; sourceTree = "<group>"; };
+		B72E62C31CB40195007FB1D6 /* link.read.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.read.1.tlog; sourceTree = "<group>"; };
+		B72E62C41CB40195007FB1D6 /* link.write.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.write.1.tlog; sourceTree = "<group>"; };
+		B72E62C51CB40195007FB1D6 /* mySketch.lastbuildstate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mySketch.lastbuildstate; sourceTree = "<group>"; };
+		B72E62C61CB40195007FB1D6 /* mySketch.write.1u.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mySketch.write.1u.tlog; sourceTree = "<group>"; };
+		B72E62C71CB40195007FB1D6 /* rc.command.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rc.command.1.tlog; sourceTree = "<group>"; };
+		B72E62C81CB40195007FB1D6 /* rc.read.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rc.read.1.tlog; sourceTree = "<group>"; };
+		B72E62C91CB40195007FB1D6 /* rc.write.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rc.write.1.tlog; sourceTree = "<group>"; };
+		B72E62CA1CB40195007FB1D6 /* mySketch.vcxprojResolveAssemblyReference.cache */ = {isa = PBXFileReference; lastKnownFileType = file; path = mySketch.vcxprojResolveAssemblyReference.cache; sourceTree = "<group>"; };
+		B72E62CB1CB40195007FB1D6 /* ofApp.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = ofApp.obj; sourceTree = "<group>"; };
+		B72E62CC1CB40195007FB1D6 /* vc140.pdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = vc140.pdb; sourceTree = "<group>"; };
+		B72E62CD1CB40195007FB1D6 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B72E62CF1CB40195007FB1D6 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B72E62D21CB40195007FB1D6 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B72E62D31CB40195007FB1D6 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
 		B7BE05091CAC81C60081DDA4 /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Syphon.framework; sourceTree = "<group>"; };
-		B7BE05101CACC0F80081DDA4 /* .suo */ = {isa = PBXFileReference; lastKnownFileType = file; path = .suo; sourceTree = "<group>"; };
-		B7BE05111CACC0F80081DDA4 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
-		B7BE05131CACC0F80081DDA4 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
-		B7BE05141CACC0F80081DDA4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		B7BE05161CACC0F80081DDA4 /* assimp.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = assimp.dll; sourceTree = "<group>"; };
-		B7BE05181CACC0F80081DDA4 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		B7BE051A1CACC0F80081DDA4 /* imga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imga.png; sourceTree = "<group>"; };
-		B7BE051B1CACC0F80081DDA4 /* imgb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgb.png; sourceTree = "<group>"; };
-		B7BE051C1CACC0F80081DDA4 /* imgc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgc.png; sourceTree = "<group>"; };
-		B7BE051D1CACC0F80081DDA4 /* imgd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imgd.jpg; sourceTree = "<group>"; };
-		B7BE051E1CACC0F80081DDA4 /* imge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imge.png; sourceTree = "<group>"; };
-		B7BE051F1CACC0F80081DDA4 /* fmodex.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = fmodex.dll; sourceTree = "<group>"; };
-		B7BE05201CACC0F80081DDA4 /* fmodex64.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = fmodex64.dll; sourceTree = "<group>"; };
-		B7BE05211CACC0F80081DDA4 /* fmodexL.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = fmodexL.dll; sourceTree = "<group>"; };
-		B7BE05221CACC0F80081DDA4 /* fmodexL64.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = fmodexL64.dll; sourceTree = "<group>"; };
-		B7BE05231CACC0F80081DDA4 /* FreeImage.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = FreeImage.dll; sourceTree = "<group>"; };
-		B7BE05241CACC0F80081DDA4 /* freetype.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = freetype.dll; sourceTree = "<group>"; };
-		B7BE05251CACC0F80081DDA4 /* glut32.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = glut32.dll; sourceTree = "<group>"; };
-		B7BE05261CACC0F80081DDA4 /* libeay32.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = libeay32.dll; sourceTree = "<group>"; };
-		B7BE05271CACC0F80081DDA4 /* mySketch_debug.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = mySketch_debug.exe; sourceTree = "<group>"; };
-		B7BE05281CACC0F80081DDA4 /* mySketch_debug.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = mySketch_debug.exp; sourceTree = "<group>"; };
-		B7BE05291CACC0F80081DDA4 /* mySketch_debug.ilk */ = {isa = PBXFileReference; lastKnownFileType = file; path = mySketch_debug.ilk; sourceTree = "<group>"; };
-		B7BE052A1CACC0F80081DDA4 /* mySketch_debug.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = mySketch_debug.lib; sourceTree = "<group>"; };
-		B7BE052B1CACC0F80081DDA4 /* mySketch_debug.pdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = mySketch_debug.pdb; sourceTree = "<group>"; };
-		B7BE052C1CACC0F80081DDA4 /* mySketchDebug.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = mySketchDebug.app; sourceTree = "<group>"; };
-		B7BE052D1CACC0F80081DDA4 /* ssleay32.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = ssleay32.dll; sourceTree = "<group>"; };
-		B7BE052E1CACC0F80081DDA4 /* Zlib.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zlib.dll; sourceTree = "<group>"; };
-		B7BE052F1CACC0F80081DDA4 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
-		B7BE05301CACC0F80081DDA4 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
-		B7BE05311CACC0F80081DDA4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		B7BE05321CACC0F80081DDA4 /* mySketch.sdf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mySketch.sdf; sourceTree = "<group>"; };
-		B7BE05331CACC0F80081DDA4 /* mySketch.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mySketch.sln; sourceTree = "<group>"; };
-		B7BE05341CACC0F80081DDA4 /* mySketch.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mySketch.vcxproj; sourceTree = "<group>"; };
-		B7BE05351CACC0F80081DDA4 /* mySketch.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mySketch.vcxproj.filters; sourceTree = "<group>"; };
-		B7BE05361CACC0F80081DDA4 /* mySketch.vcxproj.user */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mySketch.vcxproj.user; sourceTree = "<group>"; };
-		B7BE05371CACC0F80081DDA4 /* mySketch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = mySketch.xcodeproj; sourceTree = "<group>"; };
-		B7BE053D1CACC0F80081DDA4 /* icon.res */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.res; sourceTree = "<group>"; };
-		B7BE053E1CACC0F80081DDA4 /* main.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.obj; sourceTree = "<group>"; };
-		B7BE053F1CACC0F80081DDA4 /* mySketch.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mySketch.log; sourceTree = "<group>"; };
-		B7BE05411CACC0F80081DDA4 /* CL.command.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CL.command.1.tlog; sourceTree = "<group>"; };
-		B7BE05421CACC0F80081DDA4 /* CL.read.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CL.read.1.tlog; sourceTree = "<group>"; };
-		B7BE05431CACC0F80081DDA4 /* CL.write.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CL.write.1.tlog; sourceTree = "<group>"; };
-		B7BE05441CACC0F80081DDA4 /* link.command.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.command.1.tlog; sourceTree = "<group>"; };
-		B7BE05451CACC0F80081DDA4 /* link.read.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.read.1.tlog; sourceTree = "<group>"; };
-		B7BE05461CACC0F80081DDA4 /* link.write.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.write.1.tlog; sourceTree = "<group>"; };
-		B7BE05471CACC0F80081DDA4 /* mySketch.lastbuildstate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mySketch.lastbuildstate; sourceTree = "<group>"; };
-		B7BE05481CACC0F80081DDA4 /* mySketch.write.1u.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mySketch.write.1u.tlog; sourceTree = "<group>"; };
-		B7BE05491CACC0F80081DDA4 /* rc.command.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rc.command.1.tlog; sourceTree = "<group>"; };
-		B7BE054A1CACC0F80081DDA4 /* rc.read.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rc.read.1.tlog; sourceTree = "<group>"; };
-		B7BE054B1CACC0F80081DDA4 /* rc.write.1.tlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rc.write.1.tlog; sourceTree = "<group>"; };
-		B7BE054C1CACC0F80081DDA4 /* mySketch.vcxprojResolveAssemblyReference.cache */ = {isa = PBXFileReference; lastKnownFileType = file; path = mySketch.vcxprojResolveAssemblyReference.cache; sourceTree = "<group>"; };
-		B7BE054D1CACC0F80081DDA4 /* ofApp.obj */ = {isa = PBXFileReference; lastKnownFileType = file; path = ofApp.obj; sourceTree = "<group>"; };
-		B7BE054E1CACC0F80081DDA4 /* vc140.pdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = vc140.pdb; sourceTree = "<group>"; };
-		B7BE054F1CACC0F80081DDA4 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
-		B7BE05511CACC0F80081DDA4 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
-		B7BE05521CACC0F80081DDA4 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
-		B7BE05551CACC0F80081DDA4 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
-		B7BE05561CACC0F80081DDA4 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
 		BB4CC15061F9F141D681A6BF /* ofxDownloadCentral.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxDownloadCentral.h; path = ../../../addons/ofxSimpleHttp/src/ofxDownloadCentral.h; sourceTree = SOURCE_ROOT; };
 		C47F3D13394AF636333FB1BD /* ofxChecksum.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxChecksum.h; path = ../../../addons/ofxSimpleHttp/src/ofxChecksum.h; sourceTree = SOURCE_ROOT; };
 		C4AF34767E69AE73F353FEA9 /* ofxSimpleHttp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleHttp.cpp; path = ../../../addons/ofxSimpleHttp/src/ofxSimpleHttp.cpp; sourceTree = SOURCE_ROOT; };
@@ -157,7 +135,6 @@
 			files = (
 				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
 				B7BE050A1CAC81C60081DDA4 /* Syphon.framework in Frameworks */,
-				B7BE05581CACC0F80081DDA4 /* mySketch_debug.lib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +206,7 @@
 		6948EE371B920CB800B5AC1A /* local_addons */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE050C1CACC0F80081DDA4 /* mySketch */,
+				B72E629D1CB40195007FB1D6 /* DrawingImages */,
 			);
 			name = local_addons;
 			sourceTree = "<group>";
@@ -243,171 +220,151 @@
 			name = ofxSyphon;
 			sourceTree = "<group>";
 		};
-		B7BE050C1CACC0F80081DDA4 /* mySketch */ = {
+		B72E629D1CB40195007FB1D6 /* DrawingImages */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE050D1CACC0F80081DDA4 /* .vs */,
-				B7BE05111CACC0F80081DDA4 /* addons.make */,
-				B7BE05121CACC0F80081DDA4 /* arepo */,
-				B7BE05151CACC0F80081DDA4 /* bin */,
-				B7BE052F1CACC0F80081DDA4 /* config.make */,
-				B7BE05301CACC0F80081DDA4 /* icon.rc */,
-				B7BE05311CACC0F80081DDA4 /* Makefile */,
-				B7BE05321CACC0F80081DDA4 /* mySketch.sdf */,
-				B7BE05331CACC0F80081DDA4 /* mySketch.sln */,
-				B7BE05341CACC0F80081DDA4 /* mySketch.vcxproj */,
-				B7BE05351CACC0F80081DDA4 /* mySketch.vcxproj.filters */,
-				B7BE05361CACC0F80081DDA4 /* mySketch.vcxproj.user */,
-				B7BE05371CACC0F80081DDA4 /* mySketch.xcodeproj */,
-				B7BE053B1CACC0F80081DDA4 /* obj */,
-				B7BE054F1CACC0F80081DDA4 /* openFrameworks-Info.plist */,
-				B7BE05501CACC0F80081DDA4 /* openframeworkstest-timer */,
-				B7BE05521CACC0F80081DDA4 /* Project.xcconfig */,
-				B7BE05531CACC0F80081DDA4 /* src */,
+				B72E629E1CB40195007FB1D6 /* .gitignore */,
+				B72E629F1CB40195007FB1D6 /* .vs */,
+				B72E62A31CB40195007FB1D6 /* addons.make */,
+				B72E62A41CB40195007FB1D6 /* arepo */,
+				B72E62A51CB40195007FB1D6 /* bin */,
+				B72E62AE1CB40195007FB1D6 /* config.make */,
+				B72E62AF1CB40195007FB1D6 /* icon.rc */,
+				B72E62B01CB40195007FB1D6 /* Makefile */,
+				B72E62B11CB40195007FB1D6 /* mySketch.sln */,
+				B72E62B21CB40195007FB1D6 /* mySketch.vcxproj */,
+				B72E62B31CB40195007FB1D6 /* mySketch.vcxproj.filters */,
+				B72E62B41CB40195007FB1D6 /* mySketch.vcxproj.user */,
+				B72E62B51CB40195007FB1D6 /* mySketch.xcodeproj */,
+				B72E62B91CB40195007FB1D6 /* obj */,
+				B72E62CD1CB40195007FB1D6 /* openFrameworks-Info.plist */,
+				B72E62CE1CB40195007FB1D6 /* openframeworkstest-timer */,
+				B72E62CF1CB40195007FB1D6 /* Project.xcconfig */,
+				B72E62D01CB40195007FB1D6 /* src */,
 			);
-			path = mySketch;
+			path = DrawingImages;
 			sourceTree = "<group>";
 		};
-		B7BE050D1CACC0F80081DDA4 /* .vs */ = {
+		B72E629F1CB40195007FB1D6 /* .vs */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE050E1CACC0F80081DDA4 /* mySketch */,
+				B72E62A01CB40195007FB1D6 /* mySketch */,
 			);
 			path = .vs;
 			sourceTree = "<group>";
 		};
-		B7BE050E1CACC0F80081DDA4 /* mySketch */ = {
+		B72E62A01CB40195007FB1D6 /* mySketch */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE050F1CACC0F80081DDA4 /* v14 */,
+				B72E62A11CB40195007FB1D6 /* v14 */,
 			);
 			path = mySketch;
 			sourceTree = "<group>";
 		};
-		B7BE050F1CACC0F80081DDA4 /* v14 */ = {
+		B72E62A11CB40195007FB1D6 /* v14 */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE05101CACC0F80081DDA4 /* .suo */,
+				B72E62A21CB40195007FB1D6 /* .suo */,
 			);
 			path = v14;
 			sourceTree = "<group>";
 		};
-		B7BE05121CACC0F80081DDA4 /* arepo */ = {
+		B72E62A41CB40195007FB1D6 /* arepo */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE05131CACC0F80081DDA4 /* .gitattributes */,
-				B7BE05141CACC0F80081DDA4 /* .gitignore */,
 			);
 			path = arepo;
 			sourceTree = "<group>";
 		};
-		B7BE05151CACC0F80081DDA4 /* bin */ = {
+		B72E62A51CB40195007FB1D6 /* bin */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE05161CACC0F80081DDA4 /* assimp.dll */,
-				B7BE05171CACC0F80081DDA4 /* data */,
-				B7BE051F1CACC0F80081DDA4 /* fmodex.dll */,
-				B7BE05201CACC0F80081DDA4 /* fmodex64.dll */,
-				B7BE05211CACC0F80081DDA4 /* fmodexL.dll */,
-				B7BE05221CACC0F80081DDA4 /* fmodexL64.dll */,
-				B7BE05231CACC0F80081DDA4 /* FreeImage.dll */,
-				B7BE05241CACC0F80081DDA4 /* freetype.dll */,
-				B7BE05251CACC0F80081DDA4 /* glut32.dll */,
-				B7BE05261CACC0F80081DDA4 /* libeay32.dll */,
-				B7BE05271CACC0F80081DDA4 /* mySketch_debug.exe */,
-				B7BE05281CACC0F80081DDA4 /* mySketch_debug.exp */,
-				B7BE05291CACC0F80081DDA4 /* mySketch_debug.ilk */,
-				B7BE052A1CACC0F80081DDA4 /* mySketch_debug.lib */,
-				B7BE052B1CACC0F80081DDA4 /* mySketch_debug.pdb */,
-				B7BE052C1CACC0F80081DDA4 /* mySketchDebug.app */,
-				B7BE052D1CACC0F80081DDA4 /* ssleay32.dll */,
-				B7BE052E1CACC0F80081DDA4 /* Zlib.dll */,
+				B72E62A61CB40195007FB1D6 /* data */,
 			);
 			path = bin;
 			sourceTree = "<group>";
 		};
-		B7BE05171CACC0F80081DDA4 /* data */ = {
+		B72E62A61CB40195007FB1D6 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE05181CACC0F80081DDA4 /* .gitkeep */,
-				B7BE05191CACC0F80081DDA4 /* images */,
+				B72E62A71CB40195007FB1D6 /* .gitkeep */,
+				B72E62A81CB40195007FB1D6 /* images */,
 			);
 			path = data;
 			sourceTree = "<group>";
 		};
-		B7BE05191CACC0F80081DDA4 /* images */ = {
+		B72E62A81CB40195007FB1D6 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE051A1CACC0F80081DDA4 /* imga.png */,
-				B7BE051B1CACC0F80081DDA4 /* imgb.png */,
-				B7BE051C1CACC0F80081DDA4 /* imgc.png */,
-				B7BE051D1CACC0F80081DDA4 /* imgd.jpg */,
-				B7BE051E1CACC0F80081DDA4 /* imge.png */,
+				B72E62A91CB40195007FB1D6 /* imga.png */,
+				B72E62AA1CB40195007FB1D6 /* imgb.png */,
+				B72E62AB1CB40195007FB1D6 /* imgc.png */,
+				B72E62AC1CB40195007FB1D6 /* imgd.jpg */,
+				B72E62AD1CB40195007FB1D6 /* imge.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
 		};
-		B7BE05381CACC0F80081DDA4 /* Products */ = {
+		B72E62B61CB40195007FB1D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE055E1CACC0F80081DDA4 /* mySketchDebug.app */,
+				B72E62D91CB40195007FB1D6 /* mySketchDebug.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B7BE053B1CACC0F80081DDA4 /* obj */ = {
+		B72E62B91CB40195007FB1D6 /* obj */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE053C1CACC0F80081DDA4 /* Debug */,
+				B72E62BA1CB40195007FB1D6 /* Debug */,
 			);
 			path = obj;
 			sourceTree = "<group>";
 		};
-		B7BE053C1CACC0F80081DDA4 /* Debug */ = {
+		B72E62BA1CB40195007FB1D6 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE053D1CACC0F80081DDA4 /* icon.res */,
-				B7BE053E1CACC0F80081DDA4 /* main.obj */,
-				B7BE053F1CACC0F80081DDA4 /* mySketch.log */,
-				B7BE05401CACC0F80081DDA4 /* mySketch.tlog */,
-				B7BE054C1CACC0F80081DDA4 /* mySketch.vcxprojResolveAssemblyReference.cache */,
-				B7BE054D1CACC0F80081DDA4 /* ofApp.obj */,
-				B7BE054E1CACC0F80081DDA4 /* vc140.pdb */,
+				B72E62BB1CB40195007FB1D6 /* icon.res */,
+				B72E62BC1CB40195007FB1D6 /* main.obj */,
+				B72E62BD1CB40195007FB1D6 /* mySketch.log */,
+				B72E62BE1CB40195007FB1D6 /* mySketch.tlog */,
+				B72E62CA1CB40195007FB1D6 /* mySketch.vcxprojResolveAssemblyReference.cache */,
+				B72E62CB1CB40195007FB1D6 /* ofApp.obj */,
+				B72E62CC1CB40195007FB1D6 /* vc140.pdb */,
 			);
 			path = Debug;
 			sourceTree = "<group>";
 		};
-		B7BE05401CACC0F80081DDA4 /* mySketch.tlog */ = {
+		B72E62BE1CB40195007FB1D6 /* mySketch.tlog */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE05411CACC0F80081DDA4 /* CL.command.1.tlog */,
-				B7BE05421CACC0F80081DDA4 /* CL.read.1.tlog */,
-				B7BE05431CACC0F80081DDA4 /* CL.write.1.tlog */,
-				B7BE05441CACC0F80081DDA4 /* link.command.1.tlog */,
-				B7BE05451CACC0F80081DDA4 /* link.read.1.tlog */,
-				B7BE05461CACC0F80081DDA4 /* link.write.1.tlog */,
-				B7BE05471CACC0F80081DDA4 /* mySketch.lastbuildstate */,
-				B7BE05481CACC0F80081DDA4 /* mySketch.write.1u.tlog */,
-				B7BE05491CACC0F80081DDA4 /* rc.command.1.tlog */,
-				B7BE054A1CACC0F80081DDA4 /* rc.read.1.tlog */,
-				B7BE054B1CACC0F80081DDA4 /* rc.write.1.tlog */,
+				B72E62BF1CB40195007FB1D6 /* CL.command.1.tlog */,
+				B72E62C01CB40195007FB1D6 /* CL.read.1.tlog */,
+				B72E62C11CB40195007FB1D6 /* CL.write.1.tlog */,
+				B72E62C21CB40195007FB1D6 /* link.command.1.tlog */,
+				B72E62C31CB40195007FB1D6 /* link.read.1.tlog */,
+				B72E62C41CB40195007FB1D6 /* link.write.1.tlog */,
+				B72E62C51CB40195007FB1D6 /* mySketch.lastbuildstate */,
+				B72E62C61CB40195007FB1D6 /* mySketch.write.1u.tlog */,
+				B72E62C71CB40195007FB1D6 /* rc.command.1.tlog */,
+				B72E62C81CB40195007FB1D6 /* rc.read.1.tlog */,
+				B72E62C91CB40195007FB1D6 /* rc.write.1.tlog */,
 			);
 			path = mySketch.tlog;
 			sourceTree = "<group>";
 		};
-		B7BE05501CACC0F80081DDA4 /* openframeworkstest-timer */ = {
+		B72E62CE1CB40195007FB1D6 /* openframeworkstest-timer */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE05511CACC0F80081DDA4 /* .gitattributes */,
 			);
 			path = "openframeworkstest-timer";
 			sourceTree = "<group>";
 		};
-		B7BE05531CACC0F80081DDA4 /* src */ = {
+		B72E62D01CB40195007FB1D6 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				B7BE05551CACC0F80081DDA4 /* ofApp.cpp */,
-				B7BE05561CACC0F80081DDA4 /* ofApp.h */,
+				B72E62D21CB40195007FB1D6 /* ofApp.cpp */,
+				B72E62D31CB40195007FB1D6 /* ofApp.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -507,8 +464,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B7BE05381CACC0F80081DDA4 /* Products */;
-					ProjectRef = B7BE05371CACC0F80081DDA4 /* mySketch.xcodeproj */;
+					ProductGroup = B72E62B61CB40195007FB1D6 /* Products */;
+					ProjectRef = B72E62B51CB40195007FB1D6 /* mySketch.xcodeproj */;
 				},
 				{
 					ProductGroup = E4328144138ABC890047C5CB /* Products */;
@@ -523,11 +480,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B7BE055E1CACC0F80081DDA4 /* mySketchDebug.app */ = {
+		B72E62D91CB40195007FB1D6 /* mySketchDebug.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = mySketchDebug.app;
-			remoteRef = B7BE055D1CACC0F80081DDA4 /* PBXContainerItemProxy */;
+			remoteRef = B72E62D81CB40195007FB1D6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
@@ -560,17 +517,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7BE055B1CACC0F80081DDA4 /* ofApp.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				0E7F8DB36C6BBCDC5C5AE9F4 /* wrapperApp.cpp in Sources */,
 				2057AFE0A456F3E2C01E07B8 /* ofxBatchDownloader.cpp in Sources */,
+				B72E62D41CB40195007FB1D6 /* Makefile in Sources */,
 				F49F6204208AF4C3E8E8B9EC /* ofxChecksum.cpp in Sources */,
 				72A6CA9CEAFA1527B18D37B6 /* ofxDownloadCentral.cpp in Sources */,
 				75A2D700AC2F5D27B0ED2F59 /* ofxSimpleHttp.cpp in Sources */,
-				B7BE05591CACC0F80081DDA4 /* Makefile in Sources */,
 				1F558B76FB3412843DDAA031 /* ofxSyphonClient.mm in Sources */,
 				8D60C222CBD3F869382832E9 /* ofxSyphonServer.mm in Sources */,
-				B7BE05571CACC0F80081DDA4 /* mySketch_debug.exp in Sources */,
+				B72E62D61CB40195007FB1D6 /* ofApp.cpp in Sources */,
 				11DF9AB1B4EAA63E3B190CA0 /* ofxSyphonServerDirectory.mm in Sources */,
 				C9109422648B170B07A778CF /* SyphonNameboundClient.m in Sources */,
 			);
@@ -676,7 +632,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					../../../njaminwilcox/Projects/active/openFrameworks/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx,
 					"$(PROJECT_DIR)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
@@ -701,7 +657,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/mySketch/bin",
+					"$(PROJECT_DIR)/DrawingImages/bin",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
@@ -717,7 +673,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					../../../njaminwilcox/Projects/active/openFrameworks/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx,
 					"$(PROJECT_DIR)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
@@ -741,7 +697,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/mySketch/bin",
+					"$(PROJECT_DIR)/DrawingImages/bin",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
