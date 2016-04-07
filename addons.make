@@ -1,2 +1,3 @@
 ofxSimpleHttp
+ofxSocketIO
 ofxSyphon

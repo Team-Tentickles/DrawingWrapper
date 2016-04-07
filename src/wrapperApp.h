@@ -3,6 +3,8 @@
 #include "ofMain.h"
 #include "ofApp.h"
 #include "ofxSyphon.h"
+#include "ofxSocketIO.h"
+#include "ofxSocketIOData.h"
 
 class wrapperApp : public ofApp{
 
@@ -24,4 +26,20 @@ class wrapperApp : public ofApp{
 		void gotMessage(ofMessage msg);
     
         ofxSyphonServer mainOutputSyphonServer;
+    
+        ofxSocketIO socketIO;
+        bool isConnected;
+        void onConnection();
+        void bindEvents();
+        void gotEvent(string& name);
+        void onServerEvent(ofxSocketIOData& data);
+        void onPingEvent(ofxSocketIOData& data);
+        void onPackageEvent(ofxSocketIOData& data);
+    
+        ofEvent<ofxSocketIOData&> serverEvent;
+        ofEvent<ofxSocketIOData&> pingEvent;
+        ofEvent<ofxSocketIOData&> packageEvent;
+
+        std::string address;
+        std::string status;
 };
