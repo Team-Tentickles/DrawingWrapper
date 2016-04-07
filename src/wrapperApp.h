@@ -3,14 +3,17 @@
 #include "ofMain.h"
 #include "ofApp.h"
 #include "ofxSyphon.h"
+#include "ofxSimpleHttp.h"
 #include "ofxSocketIO.h"
 #include "ofxSocketIOData.h"
+
+#define OUTPUT_DIRECTORY "tempDownloads"
 
 class wrapperApp : public ofApp{
 
 	public:
 		void setup();
-//		void update();
+		void update();
 		void draw();
 
 		void keyPressed(int key);
@@ -26,6 +29,7 @@ class wrapperApp : public ofApp{
 		void gotMessage(ofMessage msg);
     
         ofxSyphonServer mainOutputSyphonServer;
+        ofxSimpleHttp http;
     
         ofxSocketIO socketIO;
         bool isConnected;
@@ -35,6 +39,10 @@ class wrapperApp : public ofApp{
         void onServerEvent(ofxSocketIOData& data);
         void onPingEvent(ofxSocketIOData& data);
         void onPackageEvent(ofxSocketIOData& data);
+        
+        void newResponse(ofxSimpleHttpResponse &response);
+    
+    
     
         ofEvent<ofxSocketIOData&> serverEvent;
         ofEvent<ofxSocketIOData&> pingEvent;

@@ -13,17 +13,28 @@ void wrapperApp::setup(){
     
     socketIO.setup(address);
     ofAddListener(socketIO.notifyEvent, this, &wrapperApp::gotEvent);
-    
     ofAddListener(socketIO.connectionEvent, this, &wrapperApp::onConnection);
     
     mainOutputSyphonServer.setName("Screen Output");
+    
+    ofxSimpleHttp::createSslContext();
+    http.addCustomHttpHeader("Accept", "application/json"); //you can supply custom headers if you need to
+    http.setCopyBufferSize(16);
+    http.setSpeedLimit(1000);
+    
+    mainOutputSyphonServer.setName("Screen Output");
+    
+    //add download listener
+    ofAddListener(http.httpResponse, this, &wrapperApp::newResponse);
 }
-//
-////--------------------------------------------------------------
-//void wrapperApp::update(){
-//
-//}
-//
+
+//--------------------------------------------------------------
+void wrapperApp::update(){
+    ofApp::update();
+    http.update();
+}
+
+
 //--------------------------------------------------------------
 void wrapperApp::draw(){
     ofApp::draw();
@@ -145,9 +156,50 @@ void wrapperApp::onPingEvent (ofxSocketIOData& data) {
 
 
 /**
- * This function handles the package data that is received from SocketIO
+ * This function handles the package data that is received from SocketIO.
+ * Tells HTTP to download the image
  */
 void wrapperApp::onPackageEvent (ofxSocketIOData& data) {
     ofLogNotice("ofxSocketIO", "package");
-    ofLogNotice("ofxSocketIO", ofToString(data.getStringValue("image")));
+    http.fetchURLToDisk(ofToString(data.getStringValue("image")), true, OUTPUT_DIRECTORY);
+}
+
+
+/**
+ * this function handles an HTTPResponse. Downloads a file to the temp directory
+ * and passes the new URL to the loadImage function
+ */
+void wrapperApp::newResponse(ofxSimpleHttpResponse &r){
+    
+    cout << "#########################################################" << endl;
+    cout << "download of " << r.url << " returned : "<< string(r.ok ? "OK" : "KO") << endl;
+    cout << "server reported size is " << r.serverReportedSize << endl;
+    cout << "server status is " << r.status << endl;
+    cout << "file content type is " << r.contentType << endl;
+    cout << "file name is " << r.fileName << endl;
+    
+    if(r.downloadToDisk){
+        cout << "file was saved to " << r.absolutePath << endl;
+        vector<string> v {
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath,
+            r.absolutePath
+        };
+        loadImages(v);
+    }
 }
