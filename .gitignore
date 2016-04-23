@@ -21,6 +21,7 @@ tests/**/gcc-release/
 *.cpp.eep
 *.cpp.elf
 *.cpp.hex
+.DS_Store
 
 
 #########################
@@ -66,3 +67,9 @@ gradlew.bat
 *.qbs.user
 *.pro.user
 *.pri
+
+#########################
+# Images
+#########################
+bin/data/images/
+bin/data/tempDownloads/
