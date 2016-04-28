@@ -127,7 +127,7 @@ void wrapperApp::bindEvents () {
     socketIO.bindEvent(pingEvent, pingEventName);
     ofAddListener(pingEvent, this, &wrapperApp::onPingEvent);
     
-    std::string packageEventName = "flatPackage";
+    std::string packageEventName = "flat-package";
     socketIO.bindEvent(packageEvent, packageEventName);
     ofAddListener(packageEvent, this, &wrapperApp::onPackageEvent);
 }
@@ -161,7 +161,16 @@ void wrapperApp::onPingEvent (ofxSocketIOData& data) {
  */
 void wrapperApp::onPackageEvent (ofxSocketIOData& data) {
     ofLogNotice("ofxSocketIO", "package");
-    http.fetchURLToDisk(ofToString(data.getStringValue("image")), true, OUTPUT_DIRECTORY);
+    string artistImg11 = data.getStringValue("artistImage11");
+    string artistImg12 = data.getStringValue("artistImage12");
+    string artistImg21 = data.getStringValue("artistImage21");
+    string artistImg22 = data.getStringValue("artistImage22");
+    
+    http.fetchURLToDisk(artistImg11, true, OUTPUT_DIRECTORY);
+    http.fetchURLToDisk(artistImg12, true, OUTPUT_DIRECTORY);
+    http.fetchURLToDisk(artistImg21, true, OUTPUT_DIRECTORY);
+    http.fetchURLToDisk(artistImg22, true, OUTPUT_DIRECTORY);
+//    http.fetchURLToDisk(ofToString(data.getStringValue("image")), true, OUTPUT_DIRECTORY);
 }
 
 
