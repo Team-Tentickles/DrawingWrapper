@@ -26,6 +26,7 @@ void wrapperApp::setup(){
     
     //add download listener
     ofAddListener(http.httpResponse, this, &wrapperApp::newResponse);
+    getImageUrlIfExists("");
 }
 
 //--------------------------------------------------------------
@@ -297,7 +298,11 @@ void wrapperApp::newResponse(ofxSimpleHttpResponse &r){
 string wrapperApp::getImageUrlIfExists(string url) {
     cout << url;
     if (url == "") {
-        return "../images/default.jpg";
+        ofFile f = ofFile("images/default.jpg");
+        cout << "\n***************\n";
+        cout << "file://" + f.getAbsolutePath();
+        cout << "\n***************\n";
+        return "file://" + f.getAbsolutePath();
     } else {
         return url;
     }
