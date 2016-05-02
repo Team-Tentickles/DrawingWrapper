@@ -10,7 +10,8 @@
 #define OUTPUT_DIRECTORY "tempDownloads"
 
 class wrapperApp : public ofApp{
-
+    private:
+        string getImageUrlIfExists(string url);
 	public:
 		void setup();
 		void update();

@@ -71,5 +71,5 @@ gradlew.bat
 #########################
 # Images
 #########################
-bin/data/images/
+# bin/data/images/
 bin/data/tempDownloads/
