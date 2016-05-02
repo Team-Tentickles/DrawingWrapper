@@ -285,7 +285,6 @@ void wrapperApp::newResponse(ofxSimpleHttpResponse &r){
             ofApp::supportingArtist6Img.clear();
             ofApp::supportingArtist6Img.load(r.absolutePath);
         }
-//        loadImages(v);
     }
 }
 
