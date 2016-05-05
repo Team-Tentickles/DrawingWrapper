@@ -42,12 +42,13 @@ class wrapperApp : public ofApp{
         void onPackageEvent(ofxSocketIOData& data);
         
         void newResponse(ofxSimpleHttpResponse &response);
-    
+        void onDownloadFinish(int & downloadsLeft);
     
     
         ofEvent<ofxSocketIOData&> serverEvent;
         ofEvent<ofxSocketIOData&> pingEvent;
         ofEvent<ofxSocketIOData&> packageEvent;
+        ofEvent<int> queueUpdate;
 
         std::string address;
         std::string status;

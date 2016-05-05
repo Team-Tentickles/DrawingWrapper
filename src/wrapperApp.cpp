@@ -26,7 +26,7 @@ void wrapperApp::setup(){
     
     //add download listener
     ofAddListener(http.httpResponse, this, &wrapperApp::newResponse);
-    getImageUrlIfExists("");
+    ofAddListener(queueUpdate, this, &wrapperApp::onDownloadFinish);
 }
 
 //--------------------------------------------------------------
@@ -96,6 +96,16 @@ void wrapperApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void wrapperApp::dragEvent(ofDragInfo dragInfo){ 
 
+}
+
+
+/**
+ * Handle the response of a finished download
+ */
+void wrapperApp::onDownloadFinish(int & downloadsLeft) {
+    if (downloadsLeft < 1) {
+        ofApp::resetAnimation();
+    }
 }
 
 
@@ -220,6 +230,8 @@ void wrapperApp::newResponse(ofxSimpleHttpResponse &r){
 //    cout << "file name is " << r.fileName << endl;
     
     if(r.downloadToDisk){
+        cout << "pending downloads: " << http.getPendingDownloads() << "\n";
+        
         cout << "file was saved to " << r.absolutePath << endl;
         if (r.customField == "startingArtist11") {
             ofApp::startingArtist11Img.clear();
@@ -285,6 +297,8 @@ void wrapperApp::newResponse(ofxSimpleHttpResponse &r){
             ofApp::supportingArtist6Img.clear();
             ofApp::supportingArtist6Img.load(r.absolutePath);
         }
+        int downloads = http.getPendingDownloads();
+        ofNotifyEvent(queueUpdate, downloads);
     }
 }
 
