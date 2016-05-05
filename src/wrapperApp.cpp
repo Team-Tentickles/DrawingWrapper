@@ -122,6 +122,10 @@ void wrapperApp::gotEvent(string& name) {
  */
 void wrapperApp::onConnection () {
     isConnected = true;
+    string name = "fromSpire";
+    string data = "right back atcha!\n";
+    socketIO.emit(name, data);
+    cout << "sending data: " << data;
     bindEvents();
 }
 
