@@ -18,6 +18,7 @@
 		B71C2ABA1CB5F2CD00F48E39 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B71C2A961CB5F2CD00F48E39 /* Makefile */; };
 		B71C2ABC1CB5F2CD00F48E39 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B71C2AB81CB5F2CD00F48E39 /* ofApp.cpp */; };
 		B71C2AC11CB5F55900F48E39 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71C2AC01CB5F55900F48E39 /* Syphon.framework */; };
+		B7499E861CDD37A8008AF25F /* TextBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7499E841CDD37A8008AF25F /* TextBlock.cpp */; };
 		B760593D1CCC328700FCD4CC /* Project.xcconfig in Sources */ = {isa = PBXBuildFile; fileRef = B71C2AB51CB5F2CD00F48E39 /* Project.xcconfig */; };
 		B76059451CCC33BD00FCD4CC /* SubsectionImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B76059431CCC33BD00FCD4CC /* SubsectionImage.cpp */; };
 		B7962FAC1CB5F88D00C5812A /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B71C2AC01CB5F55900F48E39 /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -133,6 +134,9 @@
 		B71C2AB91CB5F2CD00F48E39 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
 		B71C2AC01CB5F55900F48E39 /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Syphon.framework; path = ../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework; sourceTree = "<group>"; };
 		B71F4FB01CCFA447006F93AB /* Panel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Panel.hpp; sourceTree = "<group>"; };
+		B7499E841CDD37A8008AF25F /* TextBlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextBlock.cpp; sourceTree = "<group>"; };
+		B7499E851CDD37A8008AF25F /* TextBlock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TextBlock.hpp; sourceTree = "<group>"; };
+		B7499E8D1CDD4BB4008AF25F /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
 		B76059431CCC33BD00FCD4CC /* SubsectionImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SubsectionImage.cpp; sourceTree = "<group>"; };
 		B76059441CCC33BD00FCD4CC /* SubsectionImage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SubsectionImage.hpp; sourceTree = "<group>"; };
 		B77E05981CCBF90500BF5C23 /* Kanye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kanye.jpg; sourceTree = "<group>"; };
@@ -450,6 +454,9 @@
 		B71C2AB61CB5F2CD00F48E39 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				B7499E8D1CDD4BB4008AF25F /* Animation.h */,
+				B7499E841CDD37A8008AF25F /* TextBlock.cpp */,
+				B7499E851CDD37A8008AF25F /* TextBlock.hpp */,
 				B71F4FB01CCFA447006F93AB /* Panel.hpp */,
 				B76059431CCC33BD00FCD4CC /* SubsectionImage.cpp */,
 				B76059441CCC33BD00FCD4CC /* SubsectionImage.hpp */,
@@ -634,6 +641,7 @@
 				75A2D700AC2F5D27B0ED2F59 /* ofxSimpleHttp.cpp in Sources */,
 				08364DFD3A7CBC6885885276 /* ofxSocketIO.cpp in Sources */,
 				E30CC3BB5A2CC97C82A79C87 /* ofxSocketIOData.cpp in Sources */,
+				B7499E861CDD37A8008AF25F /* TextBlock.cpp in Sources */,
 				1F558B76FB3412843DDAA031 /* ofxSyphonClient.mm in Sources */,
 				8D60C222CBD3F869382832E9 /* ofxSyphonServer.mm in Sources */,
 				B71C2ABA1CB5F2CD00F48E39 /* Makefile in Sources */,

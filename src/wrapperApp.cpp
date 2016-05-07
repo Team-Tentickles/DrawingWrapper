@@ -9,6 +9,7 @@ void wrapperApp::setup(){
      */
     isConnected = false;
     address = "http://localhost:3000/";
+//    address = "https://https://inspire-thespire.herokuapp.com";
     status = "not connected";
     
     socketIO.setup(address);
@@ -145,8 +146,20 @@ void wrapperApp::bindEvents () {
     std::string packageEventName = "flat-package";
     socketIO.bindEvent(packageEvent, packageEventName);
     ofAddListener(packageEvent, this, &wrapperApp::onPackageEvent);
+    
+    ofAddListener(ofApp::animationDone, this, &wrapperApp::tellServerAnimationDone);
 }
 
+
+/**
+ * When the server is done, emit an event that tells the server that the
+ * animation has finished
+ */
+void wrapperApp::tellServerAnimationDone (string & evtString) {
+    string name = "animationDone";
+    cout << "animation has finished\n";
+    socketIO.emit(name, evtString);
+}
 
 /**
  * A function that handles a server event. It logs the data
@@ -176,6 +189,9 @@ void wrapperApp::onPingEvent (ofxSocketIOData& data) {
  */
 void wrapperApp::onPackageEvent (ofxSocketIOData& data) {
     ofLogNotice("ofxSocketIO", "package");
+    string similarName = data.getStringValue("similar");
+    ofApp::artistBlock.setArtist(similarName);
+    
     string artistImg11 = getImageUrlIfExists(data.getStringValue("artistImage11"));
     string artistImg12 = getImageUrlIfExists(data.getStringValue("artistImage12"));
     string artistImg21 = getImageUrlIfExists(data.getStringValue("artistImage21"));

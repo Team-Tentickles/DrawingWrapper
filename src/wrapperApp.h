@@ -40,6 +40,7 @@ class wrapperApp : public ofApp{
         void onServerEvent(ofxSocketIOData& data);
         void onPingEvent(ofxSocketIOData& data);
         void onPackageEvent(ofxSocketIOData& data);
+        void tellServerAnimationDone(string & evtString);
         
         void newResponse(ofxSimpleHttpResponse &response);
         void onDownloadFinish(int & downloadsLeft);
