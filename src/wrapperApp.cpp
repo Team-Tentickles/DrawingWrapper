@@ -2,14 +2,15 @@
 
 ////--------------------------------------------------------------
 void wrapperApp::setup(){
-    ofApp::setup();
     
     /**
-     * Initialize the
+     * This sets up the Application, it initializes the SocketIO
+     * connection, sets up SimpleHttp, and outputs the screen to Syphon
      */
+    ofApp::setup();
+    
     isConnected = false;
     address = "http://localhost:3000/";
-//    address = "https://https://inspire-thespire.herokuapp.com";
     status = "not connected";
     
     socketIO.setup(address);
@@ -30,14 +31,22 @@ void wrapperApp::setup(){
     ofAddListener(queueUpdate, this, &wrapperApp::onDownloadFinish);
 }
 
-//--------------------------------------------------------------
+
+/**
+ * Updates the Application, since this is a wrapper of ofApp, all it does is
+ * call the ofApp update function and updates the SimpleHttp object
+ */
 void wrapperApp::update(){
     ofApp::update();
     http.update();
 }
 
 
-//--------------------------------------------------------------
+/**
+ * Draws the results of the application in a window. Since it is a wrapper 
+ * of ofApp, it calls ofApp's draw function. It also draws the status of the
+ * socketIO connection and outputs the screen that was drawn with Syphon
+ */
 void wrapperApp::draw(){
     ofApp::draw();
     ofDrawBitmapStringHighlight(wrapperApp::status, 20, 20);
@@ -101,7 +110,10 @@ void wrapperApp::dragEvent(ofDragInfo dragInfo){
 
 
 /**
- * Handle the response of a finished download
+ * This function is called when SimpleHttp has finished downloading
+ * a file. It checks to see how many images are left to download.
+ * If there are no images left, it resets the animation with the new
+ * images that were downloaded
  */
 void wrapperApp::onDownloadFinish(int & downloadsLeft) {
     if (downloadsLeft < 1) {
@@ -119,7 +131,8 @@ void wrapperApp::gotEvent(string& name) {
 
 
 /**
- * This function is called when the server connects to SocketIO
+ * This function is called when the server connects to SocketIO.
+ * It serves as a test function for communication between these modules
  */
 void wrapperApp::onConnection () {
     isConnected = true;
@@ -162,7 +175,7 @@ void wrapperApp::tellServerAnimationDone (string & evtString) {
 }
 
 /**
- * A function that handles a server event. It logs the data
+ * A function that handles a server event. It logs data that was received
  */
 void wrapperApp::onServerEvent (ofxSocketIOData& data) {
     ofLogNotice("ofxSocketIO", data.getStringValue("stringData"));
